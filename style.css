@@ -1,0 +1,114 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+#header {
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-body {
+    border: 0.1rem solid #f5f5f5;
+    border-radius: 5px;
+}
+.calculator-top {
+    width: 93%;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 4rem;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #6c757d;
+    color: #f8f9fa;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+button {
+    height: 60px;
+    background-color: #adb5bd;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #212529;
+}
+button:hover {
+    background-color: #e9ecef;
+}
+.operator {
+    color: #f5f5f5;
+    font-size: 2.2rem;
+    background-color: #46494c;
+}
+.operator:hover {
+    color: #223843;
+}
+.btn-clear {
+    background-color: #3c6e71;
+    border-color: #3c6e71;
+    color: #f5f5f5;
+}
+.btn-clear:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.equal-sign {
+    background-color: #38a3a5;
+    border-color: #38a3a5;
+    color: #f5f5f5;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5;
+}
+.equal-sign:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+.fa-circle {
+    font-size: 10px;
+}
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 360px) {
+    .title {
+        margin-top: 3%;
+    }
+    .calculator-top {
+        width: 88%;
+        margin-left: 20px;
+        font-size: 3rem;
+        height: 70px;
+        border-radius: 10px;
+        background-color: #6c757d;
+        color: #f8f9fa;
+        text-align: right;
+        padding-right: 20px;
+        padding-left: 20px;
+        overflow: hidden;
+    }
+    .card-body p {
+        padding-top: -30px;
+    }
+    button {
+        height: 50px;
+        background-color: #adb5bd;
+        border-radius: 3px;
+        border: 1px solid #c4c4c4;
+        font-size: 1.5rem;
+        color: #212529;
+    }
+    .operator {
+        color: #f5f5f5;
+        font-size: 1.7rem;
+        background-color: #46494c;
+    }
+}
